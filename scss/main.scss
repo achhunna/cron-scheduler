@@ -1,0 +1,94 @@
+// variables
+$break-small: 991px;
+// colors
+$light-grey: #aaa;
+$white: #fff;
+$lavender: #f0f8ff !important;
+$red: #a00;
+
+body {
+  font-family: sans-serif;
+  background-color: $lavender;
+}
+
+.header {
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.intro {
+  padding: 20px 0px;
+}
+
+.timer {
+  font-size: 12px;
+  color: $light-grey;
+  padding: 5px;
+}
+
+.main-container {
+  display: flex;
+  align-items: stretch;
+
+  .category {
+    margin: 10px;
+
+    @media screen and (max-width: $break-small) {
+      min-height: 100px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: $break-small) {
+    display: block;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.no-task {
+  color: $light-grey;
+  width: 350px;
+  padding: 10px;
+}
+
+.cron-task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid $light-grey;
+  padding: 10px;
+  background-color: $white;
+  width: 350px;
+
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  }
+
+  .icon {
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: $light-grey;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+    &.red {
+      background-color: $red;
+    }
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .details {
+    font-size: 12px;
+    color: $light-grey;
+  }
+}
