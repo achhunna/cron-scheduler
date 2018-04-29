@@ -2,12 +2,6 @@
 node_modules
 npm-debug.log
 
-# Babel transformed JS
-public/js/app.min.js
-public/js/app.min.js.map
-public/css/main.css
-public/css/main.css.map
-
 # Local development
 *.env
 *.dev

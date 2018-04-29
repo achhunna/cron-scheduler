@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f8ff !important; }
+
+.header {
+  font-weight: bold;
+  margin: 20px 0px; }
+
+.intro {
+  padding: 20px 0px; }
+
+.timer {
+  font-size: 12px;
+  color: #aaa;
+  padding: 5px; }
+
+.main-container {
+  display: flex;
+  align-items: stretch; }
+  .main-container .category {
+    margin: 10px; }
+    @media screen and (max-width: 991px) {
+      .main-container .category {
+        min-height: 100px;
+        margin-bottom: 20px; } }
+  @media screen and (max-width: 991px) {
+    .main-container {
+      display: block; } }
+
+.center {
+  text-align: center; }
+
+.no-task {
+  color: #aaa;
+  width: 350px;
+  padding: 10px; }
+
+.cron-task {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #aaa;
+  padding: 10px;
+  background-color: #fff;
+  width: 350px; }
+  @media screen and (max-width: 991px) {
+    .cron-task {
+      width: 100%; } }
+  .cron-task .icon {
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; }
+    .cron-task .icon.red {
+      background-color: #a00; }
+  .cron-task .name {
+    font-size: 18px; }
+  .cron-task .details {
+    font-size: 12px;
+    color: #aaa; }
+
+/*# sourceMappingURL=main.css.map*/
