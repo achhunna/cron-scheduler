@@ -98,7 +98,24 @@ class App extends React.Component {
             Below is a list of tasks generated from <a href="http://www.nncron.ru/help/EN/working/cron-format.htm">cron expression</a>. Tasks which happened 3 hours ago and those occurring in the next 24 hours are calculated based on current Pacific Standard Time.
           </p>
           <p>
-            Libraries used for cron parsing: <a href="https://www.npmjs.com/package/cron">cron</a>, <a href="https://www.npmjs.com/package/cronstrue">cronstrue</a>, <a href="https://momentjs.com/">Moment.js</a>
+            <table className="table table-bordered table-sm">
+              <thead>
+                <tr>
+                  <td>Source</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>API</td>
+                  <td><a href="https://scheduler-challenge.herokuapp.com/schedule">Cron Scheduler</a></td>
+                </tr>
+                <tr>
+                  <td>Libraries used</td>
+                  <td><a href="https://www.npmjs.com/package/cron">cron</a>, <a href="https://www.npmjs.com/package/cronstrue">cronstrue</a>, <a href="https://momentjs.com/">Moment.js</a></td>
+                </tr>
+              </tbody>
+            </table>
           </p>
         </div>
         <div className="main-container">
