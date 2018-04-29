@@ -21,7 +21,7 @@ class App extends React.Component {
         });
       })
       .catch(e => { console.log(e); });
-    if(Notification && Notification.permission === 'default') {
+    if (window.Notification && Notification.permission === 'default') {
       Notification.requestPermission(function(permission) {
         if(!('permission' in Notification)) {
           Notification.permission = permission;
@@ -36,7 +36,7 @@ class App extends React.Component {
         if (d.type === "task") {
           const job = getValidJob(d.attributes.cron, startTime, endTime, cronParse);
           if (job !== null) {
-            if (job.nextDate().format('MMMM Do YYYY, h:mm a') === moment().format('MMMM Do YYYY, h:mm a')) {
+            if (window.Notification && job.nextDate().format('MMMM Do YYYY, h:mm a') === moment().format('MMMM Do YYYY, h:mm a')) {
               sendNotification(`Task Alert: ${d.attributes.name}`);
             }
             results.push((
